@@ -45,7 +45,7 @@ gulp.src('**/*.js')
 And in code: 
 
 ```js
-const foo = 'ENV::foo'
+const foo = '<ENV::foo>'
 console.log(foo) // bar
 ```
 
