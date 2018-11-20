@@ -10,10 +10,15 @@
 
 ## Table of Contents
 
+- [About](#about)
 - [Install](#install)
 - [Usage](#usage)
 - [Contribute](#contribute)
 - [License](#License)
+
+## About
+
+Inject variables with configurable prefix. Based on [gulp-inject-env-variables](https://github.com/AlmaasAre/gulp-inject-env-variables).
 
 ## Install
 
@@ -28,7 +33,7 @@ $ yarn add gulp-inject-envs
 ## Usage
 
 ```js
-const injectEnvs = require('gulp-inject-env-variables')
+const injectEnvs = require('gulp-inject-envs')
 const env = { foo: 'bar', ping: 'pong' }
 
 gulp.src('**/*.js')
