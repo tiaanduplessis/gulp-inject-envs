@@ -1,6 +1,6 @@
 const replaceTask = require('gulp-replace-task')
 
-module.exports = function injectEnvs (envVars = {}, { prefix = 'ENV::' } = {}) {
+module.exports = function injectEnvs (envVars = {}, { prefix = 'ENV::', warn = true } = {}) {
   const pattern = `<${prefix}(.*?)>`
   const regex = new RegExp(pattern, 'g')
 
@@ -11,7 +11,11 @@ module.exports = function injectEnvs (envVars = {}, { prefix = 'ENV::' } = {}) {
         replacement: function (_, current) {
           const val = envVars[current]
           if (val === undefined || val === null) {
-            throw new Error(`Environment not provided for ${current}`)
+            if (warn) {
+              console.warn(`Environment not provided for ${current}`)
+            } else {
+              throw new Error(`Environment not provided for ${current}`)
+            }
           } else {
             return val
           }
