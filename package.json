@@ -1,6 +1,6 @@
 {
   "name": "gulp-inject-envs",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Gulp plugin to inject environment variables",
   "main": "index.js",
   "repository": "https://github.com/tiaanduplessis/gulp-inject-envs",
