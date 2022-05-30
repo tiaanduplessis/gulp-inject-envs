@@ -6,28 +6,34 @@
 [![package license](https://img.shields.io/npm/l/gulp-inject-envs.svg?style=flat-square)](https://npmjs.org/package/gulp-inject-envs)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-> Gulp plugin to inject environment variables
+Gulp plugin to inject environment variables
 
 ## Table of Contents
 
-- [About](#about)
-- [Install](#install)
-- [Usage](#usage)
-- [Contribute](#contribute)
-- [License](#License)
-
-## About
-
-Inject variables with configurable prefix. Based on [gulp-inject-env-variables](https://github.com/AlmaasAre/gulp-inject-env-variables).
+- [gulp-inject-envs](#gulp-inject-envs)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Install
 
-This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
+Install the package locally within you project folder with your package manager:
 
+With `npm`:
 ```sh
-$ npm install gulp-inject-envs
-$ # OR
-$ yarn add gulp-inject-envs
+npm install gulp-inject-envs
+```
+
+With `yarn`:
+```sh
+yarn add gulp-inject-envs
+```
+
+With `pnpm`:
+```sh
+pnpm add gulp-inject-envs
 ```
 
 ## Usage
@@ -49,14 +55,10 @@ const foo = '<ENV::foo>'
 console.log(foo) // bar
 ```
 
-## Contribute
+## Contributing
 
-1. Fork it and create your feature branch: git checkout -b my-new-feature
-2. Commit your changes: git commit -am 'Add some feature'
-3. Push to the branch: git push origin my-new-feature 
-4. Submit a pull request
+Got an idea for a new feature? Found a bug? Contributions are welcome! Please [open up an issue](https://github.com/tiaanduplessis/gulp-inject-envs/issues) or [make a pull request](https://makeapullrequest.com/).
 
 ## License
 
-MIT
-    
+[MIT © Tiaan du Plessis](./LICENSE)
